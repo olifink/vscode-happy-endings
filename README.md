@@ -1,35 +1,38 @@
-# vscode-happy-endings README
+# _Happy Endings_ Extension for VSCode
 
-This is the README for your extension "vscode-happy-endings". After writing up a brief description, we recommend including the following sections.
+A small Visual Studio Code extension with a couple of slightly smarter editing commands for working in code that I have been missing.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Currently there are two commands provided. Both are intended to be used primarily via keyboard shortcuts which have been bound to what makes sense to me, but of course you can change that for your setup.
 
-For example if there is an image subfolder under your extension project workspace:
+### 1. Smart semicolon at end of line end
+
+There are of course a lot of languages where semicolons at the end of statments are mandatory or should be used for clarity, like JavaScript, Java, C/C++, CSS, Go etc.
+
+The `Happy: Smart semicolon at end of line end` command is bound by default to <kdb>Ctrl</kbd><kdb>Alt</kbd> <kdb>Enter</kbd> adds a semicolon to the end of the current line if there is none at the moment and then creates a new line.
+
+This is particularly helpful when using [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) or [Snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets) which do a great job writing code for you. However, they usually leave you in the middle of the line, with closing braces and whatnots at the end - which means you need to move the cursor to the end just to place the final semicolon ending the statement.
+
+Well: no more! Just invoke <kdb>Ctrl</kbd><kdb>Alt</kbd> <kdb>Enter</kbd> anywhere on that line and you're done:
 
 \!\[feature X\]\(images/feature-x.png\)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### 2. Smart comment current line and move to next
+
+
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+No special requirements.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+No special settings.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Currently the `Smart semicolon at end of line end` command doesn't take comments into account yet, neither does it work smartly with multi-line selections.
 
 ## Release Notes
 
@@ -49,17 +52,5 @@ Added features X, Y, and Z.
 
 -----------------------------------------------------------------------------------------------------------
 
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**

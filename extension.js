@@ -36,7 +36,9 @@ function activate(context) {
 
 
 	// Command: vscode-happy-endings.multicomment
-	//
+	// Comment or uncomment the current line and move to the next one so that
+	// it can be used quickly multiple times to comment a couple of lines without
+	// having to select them first
 	let disposable2 = vscode.commands.registerTextEditorCommand('vscode-happy-endings.comment',
 		function (textEditor, edit, args, thisArg) {
 			vscode.commands.executeCommand("editor.action.commentLine");
