@@ -19,7 +19,7 @@ This is particularly helpful when using [IntelliSense](https://code.visualstudio
 
 Well: no more! Just invoke `Ctrl+Alt Enter` anywhere on that line and you're done:
 
-![smart semicolon](screenshots/smart-semicolon.gif)
+![smart semicolon](https://raw.githubusercontent.com/olifink/vscode-happy-endings/main/screenshots/smart-semicolon.gif)
 
 ### 2. Smart comment current line and move to next
 
@@ -27,7 +27,7 @@ The smart un/comment function is the simple union of commenting or uncommenting 
 
 It makes commenting consequtive lines quick and easy without having to mark a selection block first:
 
-![smart comment](screenshots/smart-comment.gif)
+![smart comment](https://raw.githubusercontent.com/olifink/vscode-happy-endings/main/screenshots/smart-comment.gif)
 
 
 ## Requirements
