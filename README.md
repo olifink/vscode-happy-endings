@@ -23,7 +23,7 @@ Well: no more! Just invoke `Ctrl+Alt Enter` anywhere on that line and you're don
 
 ### 2. Smart comment current line and move to next
 
-The smart un/comment function is the simple union of commenting or uncommenting the current line and moving down to the next line. 
+The smart un/comment function is the simple union of commenting or uncommenting the current line and moving down to the next line with one shortcut `Ctrl+Shift /`. 
 
 It makes commenting consequtive lines quick and easy without having to mark a selection block first:
 
