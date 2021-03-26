@@ -7,3 +7,4 @@ test/**
 **/*.map
 **/.eslintrc.json
 screenshots/**
+train.png

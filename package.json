@@ -4,6 +4,7 @@
   "description": "",
   "publisher": "olifink",
   "version": "0.0.1",
+  "icon": "train.png",
   "engines": {
     "vscode": "^1.46.0"
   },
