@@ -1,4 +1,4 @@
-# `Happy Endings` Extension for VSCode
+# **Happy Endings** for VSCode
 
 A small Visual Studio Code extension with a couple of slightly smarter editing commands for working in code that I have been missing.
 
@@ -43,6 +43,10 @@ No special settings.
 Currently the `Smart semicolon at end of line end` command doesn't take comments into account yet, neither does it work smartly with multi-line selections.
 
 ## Release Notes
+
+### 0.1.1
+
+Available on Marketplace
 
 ### 0.0.1
 
