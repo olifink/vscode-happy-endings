@@ -4,13 +4,20 @@
   "description": "",
   "publisher": "olifink",
   "version": "0.0.1",
-  "icon": "https://raw.githubusercontent.com/olifink/vscode-happy-endings/main/train.png",
+  "icon": "train.png",
   "engines": {
     "vscode": "^1.46.0"
   },
   "categories": [
     "Other"
   ],
+  "repository": {
+    "url": "https://github.com/olifink/vscode-happy-endings"
+  },
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/olifink/vscode-happy-endings/issues"
+  },
   "activationEvents": [
     "onCommand:vscode-happy-endings.endOfLine",
     "onCommand:vscode-happy-endings.comment"
