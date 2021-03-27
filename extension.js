@@ -19,12 +19,17 @@ function activate(context) {
 			// get the current line and text
 			let pos = textEditor.selection.active;
 			let text = textEditor.document.lineAt(pos.line).text;
-			text = text.trimEnd();
-
+			
+			// check for a line comment
+			if(text.includes("//")) {
+				text=text.split("//")[0];
+			} else if(text.includes("/*")) {
+				// check for a start of a block comment
+				text=text.split("/*")[0];
+			}
+			
 			// add the semicolon at the end
-			// TODO maybe in the next version also handle
-			// - comments 
-			// - multi-line selections
+			text = text.trimEnd();
 			if (text.length > 0 && text[text.length - 1] != ";") {
 				let posEnd = pos.with(pos.line, text.length)
 				edit.insert(posEnd, ";");
