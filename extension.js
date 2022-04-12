@@ -19,7 +19,7 @@ function activate(context) {
 			// get the current line and text
 			let pos = textEditor.selection.active;
 			let text = textEditor.document.lineAt(pos.line).text;
-			
+
 			// check for a line comment
 			if(text.includes("//")) {
 				text=text.split("//")[0];
@@ -32,7 +32,11 @@ function activate(context) {
 			text = text.trimEnd();
 			if (text.length > 0 && text[text.length - 1] != ";") {
 				let posEnd = pos.with(pos.line, text.length)
-				edit.insert(posEnd, ";");
+
+				// bug: edit.insert(posEnd, ";"); // why would that suddenly not work anymore?
+				textEditor.edit( builder => {
+					builder.insert(posEnd,";");
+				})
 			}
 
 			// and finally make a new line
