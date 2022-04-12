@@ -3,7 +3,7 @@
   "displayName": "Happy Endings for editing",
   "description": "Slightly improved editing commands I've been missing, like adding semicolons at line ends ",
   "publisher": "olifink",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "icon": "train.png",
   "engines": {
     "vscode": "^1.46.0"
